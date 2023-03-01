@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <span>Angulator</span>
+</mat-toolbar>
+
+<div class="calculator">
+  <div class="display">
+    <input type="text" [(ngModel)]="result" matInput readonly />
+  </div>
+  <div class="buttons">
+    <button mat-raised-button color="primary" (click)="numberClicked(1)">1</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(2)">2</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(3)">3</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(4)">4</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(5)">5</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(6)">6</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(7)">7</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(8)">8</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(9)">9</button>
+    <button mat-raised-button color="primary" (click)="numberClicked(0)">0</button>
+    <button mat-raised-button color="warn" (click)="clear()">C</button>
+    <button mat-raised-button color="primary" (click)="calculate()">=</button>
+    <button mat-raised-button color="accent" (click)="operatorClicked('+')">+</button>
+    <button mat-raised-button color="accent" (click)="operatorClicked('-')">-</button>
+    <button mat-raised-button color="accent" (click)="operatorClicked('*')">*</button>
+    <button mat-raised-button color="accent" (click)="operatorClicked('/')">/</button>
+  </div>
+</div>
